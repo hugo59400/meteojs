@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--  hugo coleau  -->
+<!--  l'utilisateur entre une ville dans le champ de saisie et il recupere les infos importantes sur celles-ci  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current Weather date OpenWeatherMap</title>
+    <!--  insertion du style css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--  j'ai utilisé l'api current weather date 
+  car avec l'api (5 day weather forecast) lorsque je met le lien de l'url dans le fetch 
+  et que je veux par exemple avoir recuperer la  temperature je fais   var tempValue = data['list'][0]['main]['temp'];
+  comme indiqué dans l'api mais sur ma page html la donnée ne s'affiche pas 
+  j'ai donc utilisé l'api current weather map 
+  ce qui fait que je ne peux pas afficher toutes les 3h la meteo 
+    -->
+    <p> Current Weather date OpenWeatherMap</p>
+    <div class="input">
+        <input type="text" placeholder="Entrer une ville qui existe" class="input_text">
+        <input type="submit" value="Rechercher" class="submit">
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h1 class="name" id="name"></h1>
+            <p class="temp"></p>
+            <p class="clouds"></p>
+            <p class="desc"></p>
+            <p class="humidity"></p>
+            <p class="lon"></p>
+            <p class="lat"></p>
+            <p class="dt"></p>
+            <p class="feel"></p>
+            <p class="pressure"></p>
+            <p class="temp_min"></p>
+            <p class="wind"></p>
+            <p class="syscountry"></p>
+        </div>
+    </div>
+    <!-- insertion du script js  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
